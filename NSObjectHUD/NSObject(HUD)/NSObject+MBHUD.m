@@ -135,7 +135,8 @@ static CGFloat const kFontSize = 16;
 }
 
 + (UIView *)rootWindowView {
-    UIView *view = [[UIApplication sharedApplication].windows lastObject];
+    UIView *view = [[UIApplication sharedApplication] keyWindow];
+    // [[UIApplication sharedApplication].windows lastObject];
     return view;
 }
 
